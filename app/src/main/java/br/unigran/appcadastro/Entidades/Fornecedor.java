@@ -5,6 +5,15 @@ public class Fornecedor {
     private String nomeFornecedor;
     private String telefone;
     private String email;
+    private String CNPJ;
+
+    public String getCNPJ() {
+        return CNPJ;
+    }
+
+    public void setCNPJ(String CNPJ) {
+        this.CNPJ = CNPJ;
+    }
 
     public Integer getId() {
 

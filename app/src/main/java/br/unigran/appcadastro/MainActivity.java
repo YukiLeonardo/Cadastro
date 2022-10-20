@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import br.unigran.appcadastro.BancoDados.DBHelper;
+
 public class MainActivity extends AppCompatActivity {
         Button cliente;
         Button produto;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             produto = findViewById(R.id.id_produto);
             fornecedor = findViewById(R.id.id_fornecedor);
             sair = findViewById(R.id.id_sair);
-
+            DBHelper db = new DBHelper(MainActivity.this);
             acoesComponentes();
     }
 
