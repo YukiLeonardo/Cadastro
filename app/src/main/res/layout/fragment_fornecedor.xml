@@ -6,9 +6,40 @@
     tools:context=".fragmentos.FragmentFornecedor">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <EditText
+        android:id="@+id/editTextNomeEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nome_impresa" />
+
+    <EditText
+        android:id="@+id/editTextTelefoneFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/telefone_empresa" />
+
+    <EditText
+        android:id="@+id/editTextEmailFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/email_empresa" />
+
+    <Button
+        android:id="@+id/botaoSalvarFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar_empresa" />
+
+    <Button
+        android:id="@+id/botaoCancelarFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar_cadastro" />
 
 </FrameLayout>

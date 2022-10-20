@@ -9,4 +9,22 @@
     <string name="sair">SAIR</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">Email</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome_impresa">Nome Impresa</string>
+    <string name="telefone_empresa">Telefone Empresa</string>
+    <string name="email_empresa">Email Empresa</string>
+    <string name="salvar_empresa">Salvar Empresa</string>
+    <string name="cancelar_cadastro">Cancelar Cadastro</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="marca">Marca</string>
+    <string name="quatidade_de_produto">Quatidade de produto</string>
+    <string name="data_de_validade">Data de Validade</string>
+    <string name="pre_o_do_produto">Preço do Produto</string>
+    <string name="salvar_produto">Salvar Produto</string>
+    <string name="cancelar_produto">Cancelar Produto</string>
 </resources>

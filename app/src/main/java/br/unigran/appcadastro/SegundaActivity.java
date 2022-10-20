@@ -2,11 +2,19 @@ package br.unigran.appcadastro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.ListFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import br.unigran.appcadastro.fragmentos.FragmentCliente;
+import br.unigran.appcadastro.fragmentos.FragmentFornecedor;
+import br.unigran.appcadastro.fragmentos.FragmentListCliente;
+import br.unigran.appcadastro.fragmentos.FragmentListFornecedor;
+import br.unigran.appcadastro.fragmentos.FragmentListProduto;
+import br.unigran.appcadastro.fragmentos.FragmentProduto;
 
 public class SegundaActivity extends AppCompatActivity {
     Button cadastrar;
@@ -35,17 +43,17 @@ public class SegundaActivity extends AppCompatActivity {
         }
 
         case 0:{
-            transaction.add(R.id.fragmentoPrincipal, );
+            transaction.add(R.id.id_principal, new FragmentListProduto());
             break;
         }
 
         case 1:{
-            transaction.add(R.id.fragmentoPrincipal, );
+            transaction.add(R.id.id_principal,new FragmentListCliente());
             break;
         }
 
         case 2:{
-            transaction.add(R.id.fragmentoPrincipal, );
+            transaction.add(R.id.id_principal,new FragmentListFornecedor() );
             break;
         }
     }
@@ -60,12 +68,16 @@ public class SegundaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch (Operacao){
                     case 0:{
+                        getSupportFragmentManager().beginTransaction().replace(R.id.id_principal, new FragmentProduto()).commit();
                         break;
                     }
                     case 1:{
+                        getSupportFragmentManager().beginTransaction().replace(R.id.id_principal, new FragmentCliente()).commit();
                         break;
                     }
                     case 2:{
+                        getSupportFragmentManager().beginTransaction().replace(R.id.id_principal, new FragmentFornecedor()).commit();
+
                         break;
                     }
                 }
@@ -78,4 +90,5 @@ public class SegundaActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+    }
 }
